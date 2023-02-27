@@ -3,17 +3,16 @@
 
 /* body font size: 13px
 weights: 500, 700 */
-
 body {
+    font-family: "Manrope";
     margin: 0;
-    font-family: "Manrope" sans-serif;
 }
 
 :root {
     --verydarkblue: hsl(217, 19%, 35%);
     --desaturatedarkblue: hsl(214, 17%, 51%);
     --grayishblue: hsl(212, 23%, 69%);
-    --lightgrayblue: hsl(210, 46%, 95%)
+    --lightgrayblue: hsl(210, 46%, 95%);
 }
 
 .container {
@@ -26,15 +25,73 @@ body {
 
 .card {
     display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: #fff;
-    width: 600px;
+    max-width: 750px;
     height: 300px;
+    border-radius: 10px;
+    box-shadow: 8px 10px 20px hsla(212, 23%, 69%, 15%);
 }
 
 .table-img {
-    max-height: 100%;
-    max-width: 100%;
-    border-radius: 5px;
+    background-image: url("./images/drawers.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+.text-section {
+    padding: 12px 40px;
+}
+
+.heading {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--verydarkblue);
+}
+
+.body-text {
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--desaturatedarkblue);
+}
+
+.avatar-img {
+    border-radius: 50%;
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.avatar-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 25px;
+}
+
+.avatar-div {
+    display: flex;
+    align-items: center;
+
+}
+
+.avatar-name-date {
+    padding-left: 20px;
+    line-height: 0.5;
+}
+
+.avatar-name {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.date {
+    font-size: 13px;
+    color: var(--desaturatedarkblue);
+}
+
+.share-icon {
+    background-color: var(--lightgrayblue);
+    border-radius: 50%;
+    padding: 10px;
 }
