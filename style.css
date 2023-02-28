@@ -6,6 +6,8 @@ weights: 500, 700 */
 body {
     font-family: "Manrope";
     margin: 0;
+    background-color: var(--lightgrayblue);
+
 }
 
 :root {
@@ -16,7 +18,6 @@ body {
 }
 
 .container {
-    background-color: var(--lightgrayblue);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,6 +31,7 @@ body {
     height: 275px;
     border-radius: 10px;
     box-shadow: 8px 10px 20px hsla(212, 23%, 69%, 15%);
+
 }
 
 .table-img {
@@ -90,11 +92,71 @@ body {
     color: var(--desaturatedarkblue);
 }
 
-.share-icon {
-    border: none;
+.share {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 150px;
+    border-radius: 1000px;
     background-color: var(--lightgrayblue);
-    border-radius: 50%;
-    padding: 10px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
-    transition: background-color 0.15s ease-in-out;
+}
+
+.social-popups {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    margin-bottom: 105px;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 1;
+    background-color: var(--verydarkblue);
+    color: #fff;
+    visibility: hidden;
+}
+
+.show {
+    visibility: visible;
+}
+
+
+.social-popups h1 {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.popup-title {
+    margin: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.popups {
+    margin: 10px;
+}
+
+.social-popups::after {
+    background-color: var(--verydarkblue);
+    top: 60%;
+    left: 47%;
+    width: 20px;
+    height: 20px;
+    border-style: solid;
+    border-color: transparent;
+    content: '';
+    z-index: -1;
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+.attribution {
+    text-align: center;
+    font-family: "Montserrat";
+    font-size: 14px;
+    margin-top: -75px;
 }
