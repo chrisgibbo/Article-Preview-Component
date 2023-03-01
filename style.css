@@ -122,8 +122,19 @@ body {
 
 .show {
     visibility: visible;
+    animation: fadeIn 0.8s ease-in-out;
+    -moz-animation: fadeIn 0.8s ease-in-out;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
 
 .social-popups h1 {
     font-weight: 400;
@@ -159,4 +170,19 @@ body {
     font-family: "Montserrat";
     font-size: 14px;
     margin-top: -75px;
+}
+
+@media(max-width: 400px) {
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
